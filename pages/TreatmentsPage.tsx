@@ -1,7 +1,11 @@
 import React from 'react';
 import Treatments from '../components/Treatments';
-import { Sparkles, ArrowRight, ShieldCheck, Fingerprint, Heart } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { ShieldCheck, Fingerprint, Heart } from 'lucide-react';
+
+// De nieuwe afbeeldingen importeren
+import stokOpTonyImg from '../images/stok-op-tony.jpeg';
+import anouckLaserImg from '../images/anouck-met-laser.jpeg';
+import laserTonyImg from '../images/laser-op-tony.jpeg';
 
 const TreatmentsPage: React.FC = () => {
   return (
@@ -14,9 +18,53 @@ const TreatmentsPage: React.FC = () => {
           </p>
         </div>
 
+        {/* Prijzen en info sectie */}
         <Treatments />
 
-        {/* Value Propositions Section */}
+        {/* Visual Gallery Section - Jouw 3 foto's in de nieuwe volgorde */}
+        <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 animate-fade-in">
+           
+           {/* Foto 1 (Links): Stok op Tony */}
+           <div className="aspect-[4/3] md:aspect-[3/4] lg:aspect-square rounded-[2.5rem] overflow-hidden relative group shadow-lg shadow-[#C98B73]/10">
+              <img 
+                src={stokOpTonyImg} 
+                alt="Behandeling detail" 
+                className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#5E503F]/50 to-transparent opacity-60 group-hover:opacity-40 transition-opacity"></div>
+              <div className="absolute bottom-6 left-6 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-y-4 group-hover:translate-y-0">
+                <p className="text-xs font-bold uppercase tracking-widest">Nauwkeurigheid</p>
+              </div>
+           </div>
+
+           {/* Foto 2 (Midden): Anouck met laser */}
+           <div className="aspect-[4/3] md:aspect-[3/4] lg:aspect-square rounded-[2.5rem] overflow-hidden relative group shadow-lg shadow-[#C98B73]/10">
+              <img 
+                src={anouckLaserImg} 
+                alt="Anouck aan het werk" 
+                className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#5E503F]/50 to-transparent opacity-60 group-hover:opacity-40 transition-opacity"></div>
+              <div className="absolute bottom-6 left-6 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-y-4 group-hover:translate-y-0">
+                <p className="text-xs font-bold uppercase tracking-widest">Persoonlijke aandacht</p>
+              </div>
+           </div>
+
+           {/* Foto 3 (Rechts): Laser op Tony */}
+           <div className="aspect-[4/3] md:aspect-[3/4] lg:aspect-square rounded-[2.5rem] overflow-hidden relative group shadow-lg shadow-[#C98B73]/10">
+              <img 
+                src={laserTonyImg} 
+                alt="Laser behandeling close-up" 
+                className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#5E503F]/50 to-transparent opacity-60 group-hover:opacity-40 transition-opacity"></div>
+              <div className="absolute bottom-6 left-6 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-y-4 group-hover:translate-y-0">
+                <p className="text-xs font-bold uppercase tracking-widest">Effectief resultaat</p>
+              </div>
+           </div>
+        </div>
+
+        {/* Waarden sectie (Kwaliteit, Uniek, Persoonlijk) */}
         <div className="mt-24 grid grid-cols-1 md:grid-cols-3 gap-12 animate-fade-in max-w-7xl mx-auto">
           {[
             { 
