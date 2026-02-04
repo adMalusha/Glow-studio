@@ -12,12 +12,7 @@ const Intro: React.FC = () => {
               Van een tastbare herinnering aan je zwangerschap tot verzorgende behandelingen met persoonlijke aandacht.
             </p>
             <p>
-              In ons salon combineren we moderne technologie met persoonlijke aandacht om jou een verfijnde en verzorgde uitstraling te bieden. 
-              Je kan bij ons terecht voor het vastleggen van een uniek moment met een 3D zwangerschapsbeeldje, 
-              voor langdurig gladde huid dankzij laserontharing en voor een frissere, stralende glimlach met professioneel tanden witten.
-            </p>
-            <p>
-              Alles gebeurt in een rustige en discrete omgeving, waar kwaliteit, comfort en vertrouwen centraal staan. Wij dragen zorg voor elk detail van jouw traject.
+              In ons salon kan je terecht voor 3D zwangerschapsbeeldjes, laserontharing en tanden witten. Alle behandelingen gaan door in een rustige omgeving, waar kwaliteit, comfort en vertrouwen centraal staan.
             </p>
           </div>
         </div>
