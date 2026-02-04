@@ -33,7 +33,6 @@ const TreatmentsPage: React.FC = () => {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#5E503F]/50 to-transparent opacity-60 group-hover:opacity-40 transition-opacity"></div>
               <div className="absolute bottom-6 left-6 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-y-4 group-hover:translate-y-0">
-                <p className="text-xs font-bold uppercase tracking-widest">Nauwkeurigheid</p>
               </div>
            </div>
 
@@ -46,7 +45,7 @@ const TreatmentsPage: React.FC = () => {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#5E503F]/50 to-transparent opacity-60 group-hover:opacity-40 transition-opacity"></div>
               <div className="absolute bottom-6 left-6 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-y-4 group-hover:translate-y-0">
-                <p className="text-xs font-bold uppercase tracking-widest">Persoonlijke aandacht</p>
+                
               </div>
            </div>
 
@@ -59,7 +58,7 @@ const TreatmentsPage: React.FC = () => {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#5E503F]/50 to-transparent opacity-60 group-hover:opacity-40 transition-opacity"></div>
               <div className="absolute bottom-6 left-6 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-y-4 group-hover:translate-y-0">
-                <p className="text-xs font-bold uppercase tracking-widest">Effectief resultaat</p>
+              
               </div>
            </div>
         </div>
