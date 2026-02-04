@@ -1,19 +1,18 @@
 import React from 'react';
 import { BOOKING_URL } from '../constants';
+import studioBg from '../images/studio.jpeg';
 
 const Hero: React.FC = () => {
   return (
-    <section className="relative h-[90vh] flex items-center justify-center overflow-hidden bg-[#F9E5E5]">
-      {/* Achtergrond afbeelding met overlay */}
-      <div className="absolute inset-0 z-0">
-        <img 
-          src="/studio.jpeg" 
-          alt="Studio background" 
-          className="w-full h-full object-cover opacity-20" // Laag gehouden voor subtiele look
-        />
-        {/* Roze kleurfilter over de afbeelding */}
-        <div className="absolute inset-0 bg-[#F9E5E5]/60 mix-blend-multiply"></div>
-      </div>
+    <section 
+      className="relative h-[90vh] flex items-center justify-center overflow-hidden bg-cover bg-center"
+      style={{ backgroundImage: `url(${studioBg})` }}
+    >
+      {/* Overlay: Zorgt voor de roze gloed over de foto zodat tekst leesbaar blijft */}
+      <div className="absolute inset-0 bg-[#F9E5E5]/80 mix-blend-overlay"></div>
+      
+      {/* Extra wit laagje voor betere leesbaarheid tekst, optioneel aan te passen */}
+      <div className="absolute inset-0 bg-white/30"></div>
 
       {/* Decoratieve elementen (behouden uit origineel) */}
       <div className="absolute top-0 right-0 w-1/2 h-full bg-[#F4D3D3]/40 rounded-l-full blur-3xl z-10 animate-pulse"></div>
