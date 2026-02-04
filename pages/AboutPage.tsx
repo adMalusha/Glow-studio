@@ -1,6 +1,6 @@
 import React from 'react';
 import { Sparkles, Heart, Baby, GraduationCap } from 'lucide-react';
-import anouckPortrait from '../images/over ons foto.jpeg';
+import anouckPortrait from '../images/over-ons-foto.jpeg';
 
 const AboutPage: React.FC = () => {
   return (
