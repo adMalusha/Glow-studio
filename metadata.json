@@ -1,0 +1,7 @@
+{
+  "name": "Glow Studio",
+  "description": "Een moderne, high-end beauty studio website met een geïntegreerd boekingssysteem voor laserontharing en tanden bleken.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
