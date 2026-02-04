@@ -1,5 +1,6 @@
 import React from 'react';
 import { Sparkles, Heart, Baby, GraduationCap } from 'lucide-react';
+import anouckPortrait from '../images/over ons foto.jpeg';
 
 const AboutPage: React.FC = () => {
   return (
@@ -16,8 +17,11 @@ const AboutPage: React.FC = () => {
             </h1>
             
             <div className="aspect-[4/5] bg-[#FDF7F5] rounded-[3rem] overflow-hidden border border-[#F4D3D3]/30 relative group">
-               {/* Simulating a professional portrait background */}
-               <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1590650153855-d9e808231d41?auto=format&fit=crop&q=80')] bg-cover bg-center opacity-80 group-hover:scale-105 transition-transform duration-700"></div>
+               {/* Aangepaste foto van Anouck */}
+               <div 
+                 className="absolute inset-0 bg-cover bg-center opacity-80 group-hover:scale-105 transition-transform duration-700"
+                 style={{ backgroundImage: `url(${anouckPortrait})` }}
+               ></div>
                <div className="absolute inset-0 bg-gradient-to-t from-[#5E503F]/20 to-transparent"></div>
             </div>
           </div>
