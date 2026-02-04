@@ -11,10 +11,10 @@ const Hero: React.FC = () => {
       {/* Overlay: Zorgt voor de roze gloed over de foto zodat tekst leesbaar blijft */}
       <div className="absolute inset-0 bg-[#F9E5E5]/80 mix-blend-overlay"></div>
       
-      {/* Extra wit laagje voor betere leesbaarheid tekst, optioneel aan te passen */}
+      {/* Extra wit laagje voor betere leesbaarheid tekst */}
       <div className="absolute inset-0 bg-white/30"></div>
 
-      {/* Decoratieve elementen (behouden uit origineel) */}
+      {/* Decoratieve elementen */}
       <div className="absolute top-0 right-0 w-1/2 h-full bg-[#F4D3D3]/40 rounded-l-full blur-3xl z-10 animate-pulse"></div>
       
       <div className="container relative z-20 mx-auto px-6 text-center max-w-5xl animate-fade-in-up">
