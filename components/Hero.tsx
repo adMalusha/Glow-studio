@@ -4,12 +4,24 @@ import { BOOKING_URL } from '../constants';
 const Hero: React.FC = () => {
   return (
     <section className="relative h-[90vh] flex items-center justify-center overflow-hidden bg-[#F9E5E5]">
-      {/* Background Decorative Element */}
-      <div className="absolute top-0 right-0 w-1/2 h-full bg-[#F4D3D3]/40 rounded-l-full blur-3xl -z-10 animate-pulse"></div>
-      <div className="absolute bottom-0 left-0 w-1/3 h-2/3 bg-[#C98B73]/10 rounded-r-full blur-3xl -z-10"></div>
+      {/* Achtergrond afbeelding met overlay */}
+      <div className="absolute inset-0 z-0">
+        <img 
+          src="/studio.jpeg" 
+          alt="Studio background" 
+          className="w-full h-full object-cover opacity-20" // Laag gehouden voor subtiele look
+        />
+        {/* Roze kleurfilter over de afbeelding */}
+        <div className="absolute inset-0 bg-[#F9E5E5]/60 mix-blend-multiply"></div>
+      </div>
 
-      <div className="container mx-auto px-6 text-center max-w-5xl animate-fade-in-up">
-        <span className="text-xs uppercase tracking-[0.4em] text-[#C98B73] font-bold mb-6 block">Welkom bij Glow Studio</span>
+      {/* Decoratieve elementen (behouden uit origineel) */}
+      <div className="absolute top-0 right-0 w-1/2 h-full bg-[#F4D3D3]/40 rounded-l-full blur-3xl z-10 animate-pulse"></div>
+      
+      <div className="container relative z-20 mx-auto px-6 text-center max-w-5xl animate-fade-in-up">
+        <span className="text-xs uppercase tracking-[0.4em] text-[#C98B73] font-bold mb-6 block">
+          Welkom bij Glow Studio
+        </span>
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-light serif-font leading-tight text-[#5E503F] mb-8">
           Zorg voor elk bijzonder & <span className="italic">persoonlijk</span> moment.
         </h1>
