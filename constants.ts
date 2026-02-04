@@ -7,7 +7,7 @@ export const COLORS = {
   white: '#FFFFFF',
 };
 
-export const BOOKING_URL = "https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ3dR4ewTh5C4XlGBSMPqm9LhYw6viR-jxFS4UIV2gEl3nuB_xTOwiKSw0ZeDtr_-d7HHuE19Wei";
+export const BOOKING_URL = "https://calendly.com/glowstudiolede";
 
 export const GOOGLE_REVIEWS_URL = "https://www.google.com/search?sa=X&sca_esv=1cf3b1e2cbd119f3&sxsrf=ANbL-n4F6YTlUG0Jrz_T4_9QvayOwB_wmQ:1770022471712&q=Glow+Studio+Reviews&rflfq=1&num=20&stick=H4sIAAAAAAAAAONgkxI2NTczMTGzMDcxMLM0MDAzs7Aw28DI-IpR2D0nv1whuKQ0JTNfISi1LDO1vHgRKzZRAMXl_ZdGAAAA&rldimm=5764468740690066886&tbm=lcl&hl=nl-BE&ved=2ahUKEwjz2K7Ft7qSAxWy1wIHHVaZBzYQ9fQKegQIVxAI&biw=1920&bih=945&dpr=1&aic=0#lkt=LocalPoiReviews";
 
