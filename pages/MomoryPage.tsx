@@ -1,7 +1,7 @@
 import React from 'react';
 import { Heart, Camera, ClipboardList, Sparkles, Calendar, ExternalLink } from 'lucide-react';
 import { BOOKING_URL } from '../constants';
-import grootWitKleintjesWit from '../images/grootWitKleintjeswit.png';
+import grootWitKleintjesWit from '../images/grootWitKleintjesWit.png';
 import BronsBeeldjeKlein from '../images/BronsBeeldjeKlein.png';
 import MomoryLOGO from '../images/MomoryLOGO.jpeg';
 import grootGoud from '../images/grootGoud.png';
