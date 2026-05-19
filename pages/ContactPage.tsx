@@ -10,8 +10,8 @@ const ContactPage: React.FC = () => {
   const openingHours = [
     { day: 'Maandag', hours: 'Gesloten' },
     { day: 'Dinsdag', hours: '17:00 – 20:00' },
-    { day: 'Woensdag', hours: '09:30 – 18:00' },
-    { day: 'Donderdag', hours: '09:30 – 18:00' },
+    { day: 'Woensdag', hours: '15:00 – 18:00' },
+    { day: 'Donderdag', hours: '09:30 – 16:00' },
     { day: 'Vrijdag', hours: 'Gesloten' },
     { day: 'Zaterdag', hours: '09:30 – 16:00' },
     { day: 'Zondag', hours: 'Gesloten' },
