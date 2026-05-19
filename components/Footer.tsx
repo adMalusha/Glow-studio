@@ -64,7 +64,7 @@ const Footer: React.FC = () => {
             </ul>
             <div className="flex items-center space-x-4 bg-white/5 p-4 rounded-xl border border-white/5">
               <img 
-                src="/src/assets/images/eljolie_label_logo_1779196929890.png" 
+                src="/images/eljolie_label_logo_1779196929890.png" 
                 alt="Eljolie Label" 
                 className="w-12 h-12 object-contain"
                 referrerPolicy="no-referrer"
