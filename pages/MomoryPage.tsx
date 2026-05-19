@@ -4,7 +4,7 @@ import { BOOKING_URL } from '../constants';
 import grootWitKleintjesWit from '../images/grootWitKleintjesWit.png';
 import BronsBeeldjeKlein from '../images/BronsBeeldjeKlein.png';
 import grootGoud from '../images/grootGoud.png';
-import MomoryLOGO from '../images/MomoryLOGO.png';
+import MomoryLOGO from '../images/MomoryLOGO.jpeg';
 
 const MomoryPage: React.FC = () => {
   const steps = [
