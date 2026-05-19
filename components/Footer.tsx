@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Sparkles, Instagram, Facebook, Phone, Star } from 'lucide-react';
 import { BOOKING_URL, GOOGLE_REVIEWS_URL } from '../constants';
+import eljolieLabel from '../images/eljolie_label_logo_1779196929890.png';
 
 const Footer: React.FC = () => {
   return (
@@ -64,11 +65,10 @@ const Footer: React.FC = () => {
             </ul>
             <div className="flex items-center space-x-4 bg-white/5 p-4 rounded-xl border border-white/5">
               <img 
-                src="/images/eljolie_label_logo_1779196929890.png" 
-                alt="Eljolie Label" 
-                className="w-12 h-12 object-contain"
-                referrerPolicy="no-referrer"
-              />
+  src={eljolieLabel}
+  alt="Eljolie Label" 
+  className="w-full h-full object-contain rounded-full"
+/>
               <div>
                 <p className="text-[8px] font-bold uppercase tracking-widest text-[#C98B73]">Gecertificeerd</p>
                 <p className="text-[10px] font-semibold text-white/80">Eljolie Label Salon</p>
