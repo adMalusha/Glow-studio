@@ -2,9 +2,9 @@ import React from 'react';
 import { Heart, Camera, ClipboardList, Sparkles, Calendar, ExternalLink } from 'lucide-react';
 import { BOOKING_URL } from '../constants';
 import grootWitKleintjesWit from '../images/grootWitKleintjeswit.png';
-import grootWitKleintjesWit from '../images/BronsBeeldjeKlein.png';
-import grootWitKleintjesWit from '../images/MomoryLOGO.png';
-import grootWitKleintjesWit from '../images/grootGoud.png';
+import BronsBeeldjeKlein from '../images/BronsBeeldjeKlein.png';
+import MomoryLOGO from '../images/MomoryLOGO.png';
+import grootGoud from '../images/grootGoud.png';
 
 const MomoryPage: React.FC = () => {
   const steps = [
