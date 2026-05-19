@@ -3,7 +3,7 @@ import { Heart, Camera, ClipboardList, Sparkles, Calendar, ExternalLink } from '
 import { BOOKING_URL } from '../constants';
 import grootWitKleintjesWit from '../images/grootWitKleintjeswit.png';
 import BronsBeeldjeKlein from '../images/BronsBeeldjeKlein.png';
-import MomoryLOGO from '../images/MomoryLOGO.png';
+import MomoryLOGO from '../images/MomoryLOGO.jpeg';
 import grootGoud from '../images/grootGoud.png';
 
 const MomoryPage: React.FC = () => {
