@@ -10,6 +10,8 @@ import ContactPage from './pages/ContactPage';
 import AboutPage from './pages/AboutPage';
 import ProcessPage from './pages/ProcessPage';
 import HouseRulesPage from './pages/HouseRulesPage';
+import PartnersPage from './pages/PartnersPage';
+import MomoryPage from './pages/MomoryPage';
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -30,9 +32,11 @@ const App: React.FC = () => {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/over-ons" element={<AboutPage />} />
+            <Route path="/momory" element={<MomoryPage />} />
             <Route path="/behandelingen" element={<TreatmentsPage />} />
             <Route path="/werkwijze" element={<ProcessPage />} />
             <Route path="/huisregels" element={<HouseRulesPage />} />
+            <Route path="/partners" element={<PartnersPage />} />
             <Route path="/afspraak" element={<BookingPage />} />
             <Route path="/contact" element={<ContactPage />} />
           </Routes>
