@@ -65,10 +65,10 @@ const Footer: React.FC = () => {
             </ul>
             <div className="flex items-center space-x-4 bg-white/5 p-4 rounded-xl border border-white/5">
               <img 
-  src={eljolieLabel}
-  alt="Eljolie Label" 
-  className="w-full h-full object-contain rounded-full"
-/>
+                  src={eljolieLabel}
+                  alt="Eljolie Label" 
+                  className="w-10 h-10 object-contain rounded-full flex-shrink-0"
+              />
               <div>
                 <p className="text-[8px] font-bold uppercase tracking-widest text-[#C98B73]">Gecertificeerd</p>
                 <p className="text-[10px] font-semibold text-white/80">Eljolie Label Salon</p>
