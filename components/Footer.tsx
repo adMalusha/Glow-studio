@@ -44,11 +44,13 @@ const Footer: React.FC = () => {
 
           <div>
             <h4 className="text-xs uppercase tracking-[0.4em] font-bold text-[#C98B73] mb-8">Navigatie</h4>
-            <ul className="space-y-4">
+            <ul className="space-y-4 mb-10">
               <li><Link to="/over-ons" className="text-[#FDF7F5]/60 hover:text-white transition-colors">Over ons</Link></li>
               <li><Link to="/behandelingen" className="text-[#FDF7F5]/60 hover:text-white transition-colors">Behandelingen</Link></li>
               <li><Link to="/werkwijze" className="text-[#FDF7F5]/60 hover:text-white transition-colors">Werkwijze</Link></li>
               <li><Link to="/contact" className="text-[#FDF7F5]/60 hover:text-white transition-colors">Contact</Link></li>
+              <li><Link to="/momory" className="text-[#FDF7F5]/60 hover:text-white transition-colors tracking-widest font-bold">MOMory</Link></li>
+              <li><Link to="/partners" className="text-[#FDF7F5]/60 hover:text-white transition-colors">Partners</Link></li>
               <li>
                 <a 
                   href={BOOKING_URL} 
@@ -60,6 +62,18 @@ const Footer: React.FC = () => {
                 </a>
               </li>
             </ul>
+            <div className="flex items-center space-x-4 bg-white/5 p-4 rounded-xl border border-white/5">
+              <img 
+                src="/src/assets/images/eljolie_label_logo_1779196929890.png" 
+                alt="Eljolie Label" 
+                className="w-12 h-12 object-contain"
+                referrerPolicy="no-referrer"
+              />
+              <div>
+                <p className="text-[8px] font-bold uppercase tracking-widest text-[#C98B73]">Gecertificeerd</p>
+                <p className="text-[10px] font-semibold text-white/80">Eljolie Label Salon</p>
+              </div>
+            </div>
           </div>
 
           <div>
