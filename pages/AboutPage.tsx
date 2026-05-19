@@ -1,6 +1,5 @@
 import React from 'react';
 import { Sparkles, Heart, Baby, GraduationCap } from 'lucide-react';
-import anouckPortrait from '../images/over-ons-foto.jpeg';
 
 const AboutPage: React.FC = () => {
   return (
@@ -17,11 +16,8 @@ const AboutPage: React.FC = () => {
             </h1>
             
             <div className="aspect-[4/5] bg-[#FDF7F5] rounded-[3rem] overflow-hidden border border-[#F4D3D3]/30 relative group">
-               {/* Aangepaste foto van Anouck */}
-               <div 
-                 className="absolute inset-0 bg-cover bg-center opacity-80 group-hover:scale-105 transition-transform duration-700"
-                 style={{ backgroundImage: `url(${anouckPortrait})` }}
-               ></div>
+               {/* Simulating a professional portrait background */}
+               <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1590650153855-d9e808231d41?auto=format&fit=crop&q=80')] bg-cover bg-center opacity-80 group-hover:scale-105 transition-transform duration-700"></div>
                <div className="absolute inset-0 bg-gradient-to-t from-[#5E503F]/20 to-transparent"></div>
             </div>
           </div>
@@ -69,6 +65,24 @@ const AboutPage: React.FC = () => {
               <p className="text-[#5E503F]/60 leading-relaxed italic">
                 Je bent van harte welkom in Glow Studio, waar ik je met een glimlach en persoonlijke aandacht ontvang. 🤍
               </p>
+            </div>
+
+            {/* Eljolie Label Certification */}
+            <div className="mt-12 bg-[#F9E5E5]/30 p-8 rounded-[2rem] border border-[#F4D3D3]/20 flex items-center gap-6">
+              <div className="w-20 h-20 flex-shrink-0 bg-white rounded-full p-2 shadow-sm border border-[#F4D3D3]/10">
+                <img 
+                  src="/src/assets/images/eljolie_label_logo_1779196929890.png" 
+                  alt="Eljolie Label" 
+                  className="w-full h-full object-contain rounded-full"
+                  referrerPolicy="no-referrer"
+                />
+              </div>
+              <div>
+                <h4 className="text-sm font-bold uppercase tracking-widest text-[#5E503F] mb-2">Gecertificeerd Salon</h4>
+                <p className="text-xs text-[#5E503F]/70 leading-relaxed">
+                  Glow Studio draagt met trots het <strong>Eljolie Label</strong>, een erkenning voor kwaliteit, professionaliteit en een hoogwaardige beautybeleving.
+                </p>
+              </div>
             </div>
           </div>
 
