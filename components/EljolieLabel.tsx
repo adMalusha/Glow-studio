@@ -1,5 +1,6 @@
 import React from 'react';
 import { Award, CheckCircle } from 'lucide-react';
+import eljolieLabel from '../images/eljolie_label_logo_1779196929890.png';
 
 const EljolieLabel: React.FC = () => {
   return (
@@ -11,12 +12,11 @@ const EljolieLabel: React.FC = () => {
             <div className="relative group">
               <div className="absolute inset-0 bg-[#F4D3D3] rounded-full blur-2xl opacity-20 group-hover:opacity-40 transition-opacity"></div>
               <div className="relative w-48 h-48 md:w-64 md:h-64 border-2 border-[#F4D3D3]/30 rounded-full flex items-center justify-center p-4 bg-white shadow-xl transform hover:scale-105 transition-transform duration-500">
-                <img 
-                  src="/images/eljolie_label_logo_1779196929890.png" 
-                  alt="Eljolie Label Gecertificeerd" 
-                  className="w-full h-full object-contain rounded-full"
-                  referrerPolicy="no-referrer"
-                />
+               <img 
+  src={eljolieLabel}
+  alt="Eljolie Label" 
+  className="w-full h-full object-contain rounded-full"
+/>
               </div>
               <div className="absolute -top-4 -right-4 bg-[#C98B73] text-white p-4 rounded-full shadow-lg">
                 <Award className="w-6 h-6" />
