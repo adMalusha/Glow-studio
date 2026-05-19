@@ -1,6 +1,10 @@
 import React from 'react';
 import { Heart, Camera, ClipboardList, Sparkles, Calendar, ExternalLink } from 'lucide-react';
 import { BOOKING_URL } from '../constants';
+import grootWitKleintjesWit from '../images/grootWitKleintjeswit.png';
+import grootWitKleintjesWit from '../images/BronsBeeldjeKlein.png';
+import grootWitKleintjesWit from '../images/MomoryLOGO.png';
+import grootWitKleintjesWit from '../images/grootGoud.png';
 
 const MomoryPage: React.FC = () => {
   const steps = [
@@ -31,10 +35,11 @@ const MomoryPage: React.FC = () => {
   ];
 
   const galleryImages = [
-    '/src/assets/images/momory_figurine_1_1779196530661.png',
-    '/src/assets/images/momory_figurine_2_1779196548591.png',
-    '/src/assets/images/momory_studio_session_1779196565711.png',
-  ];
+  grootWitKleintjesWit,
+  BronsBeeldjeKlein,
+  MomoryLOGO,
+  grootGoud,
+];
 
   return (
     <div className="pt-32 pb-24 bg-[#FDF7F5]">
