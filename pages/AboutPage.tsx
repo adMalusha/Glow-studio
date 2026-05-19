@@ -1,6 +1,7 @@
 import React from 'react';
 import { Sparkles, Heart, Baby, GraduationCap } from 'lucide-react';
 import anouckPortrait from '../images/over-ons-foto.jpeg';
+import eljolieLabel from '../images/eljolie_label_logo_1779196929890.png';
 
 const AboutPage: React.FC = () => {
   return (
@@ -75,10 +76,9 @@ const AboutPage: React.FC = () => {
             <div className="mt-12 bg-[#F9E5E5]/30 p-8 rounded-[2rem] border border-[#F4D3D3]/20 flex items-center gap-6">
               <div className="w-20 h-20 flex-shrink-0 bg-white rounded-full p-2 shadow-sm border border-[#F4D3D3]/10">
                 <img 
-                  src="/src/assets/images/eljolie_label_logo_1779196929890.png" 
-                  alt="Eljolie Label" 
-                  className="w-full h-full object-contain rounded-full"
-                  referrerPolicy="no-referrer"
+                    src={eljolieLabel}
+                    alt="Eljolie Label" 
+                    className="w-full h-full object-contain rounded-full"
                 />
               </div>
               <div>
