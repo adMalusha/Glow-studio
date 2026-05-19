@@ -4,6 +4,7 @@ import { BOOKING_URL } from '../constants';
 import grootWitKleintjesWit from '../images/grootWitKleintjesWit.png';
 import BronsBeeldjeKlein from '../images/BronsBeeldjeKlein.png';
 import grootGoud from '../images/grootGoud.png';
+import MomoryLOGO from '../images/MomoryLOGO.png';
 
 const MomoryPage: React.FC = () => {
   const steps = [
@@ -36,6 +37,7 @@ const MomoryPage: React.FC = () => {
   const galleryImages = [
   grootWitKleintjesWit,
   BronsBeeldjeKlein,
+  MomoryLOGO,
   grootGoud,
 ];
 
@@ -135,7 +137,7 @@ const MomoryPage: React.FC = () => {
             <p className="text-[#C98B73] font-bold tracking-widest text-xs uppercase">Sfeerbeelden van MOMory</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {galleryImages.map((img, i) => (
+            {galleryImages.slice(1).map((img, i) => (
               <div key={i} className="aspect-square rounded-[2rem] overflow-hidden shadow-lg border-4 border-white group">
                 <img 
                   src={img} 
