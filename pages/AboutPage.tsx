@@ -76,7 +76,7 @@ const AboutPage: React.FC = () => {
             <div className="mt-12 bg-[#F9E5E5]/30 p-8 rounded-[2rem] border border-[#F4D3D3]/20 flex items-center gap-6">
               <div className="w-20 h-20 flex-shrink-0 bg-white rounded-full p-2 shadow-sm border border-[#F4D3D3]/10">
                 <img 
-                    src={eljolieLabel}
+                    src={EljolieLabel}
                     alt="Eljolie Label" 
                     className="w-full h-full object-contain rounded-full"
                 />
