@@ -1,7 +1,7 @@
 import React from 'react';
 import { Sparkles, Heart, Baby, GraduationCap } from 'lucide-react';
 import anouckPortrait from '../images/over-ons-foto.jpeg';
-import eljolieLabel from '../images/eljolie_label_logo_1779196929890.png';
+import EljolieLabel from '../images/EljolieLabel.png';
 
 const AboutPage: React.FC = () => {
   return (
