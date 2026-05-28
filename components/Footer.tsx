@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Sparkles, Instagram, Facebook, Phone, Star } from 'lucide-react';
 import { BOOKING_URL, GOOGLE_REVIEWS_URL } from '../constants';
-import eljolieLabel from '../images/eljolie_label_logo_1779196929890.png';
+import EljolieLabel from '../images/EljolieLabel.png';
 
 const Footer: React.FC = () => {
   return (
