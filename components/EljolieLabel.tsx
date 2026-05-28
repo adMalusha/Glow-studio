@@ -1,6 +1,6 @@
 import React from 'react';
 import { Award, CheckCircle } from 'lucide-react';
-import eljolieLabel from '../images/eljolie_label_logo_1779196929890.png';
+import eljolieLabel from '../images/EljolieLabel.png';
 
 const EljolieLabel: React.FC = () => {
   return (
