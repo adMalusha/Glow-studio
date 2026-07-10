@@ -1,39 +1,53 @@
 import React from 'react';
 import { BOOKING_URL } from '../constants';
-import studioBg from '../images/hero-collage.jpg';
+import heroCollage from '../images/hero-collage.jpg';
 
 const Hero: React.FC = () => {
   return (
-    <section 
-      className="relative h-[90vh] flex items-center justify-center overflow-hidden bg-cover bg-center"
-      style={{ backgroundImage: `url(${studioBg})` }}
-    >
-      {/* Overlay: Zorgt voor de roze gloed over de foto zodat tekst leesbaar blijft */}
-      <div className="absolute inset-0 bg-[#F9E5E5]/80 mix-blend-overlay"></div>
-      
-      {/* Extra wit laagje voor betere leesbaarheid tekst */}
-      <div className="absolute inset-0 bg-white/40"></div>
+    <section className="relative overflow-hidden bg-[#FDF7F5] pt-10 md:pt-16 pb-16 md:pb-24">
+      <div className="container relative z-10 mx-auto px-6 max-w-6xl animate-fade-in-up">
 
-      {/* Decoratieve elementen */}
-      <div className="absolute top-0 right-0 w-1/2 h-full bg-[#F4D3D3]/40 rounded-l-full blur-3xl z-10 animate-pulse"></div>
-      
-      <div className="container relative z-20 mx-auto px-6 text-center max-w-5xl animate-fade-in-up">
-        <span className="text-xs uppercase tracking-[0.4em] text-[#C98B73] font-bold mb-6 block">
-          Welkom bij Glow Studio
-        </span>
-        <h1 className="text-4xl md:text-6xl lg:text-7xl font-light serif-font leading-tight text-[#5E503F] mb-12">
-          Zorg voor elk bijzonder & <span className="italic">persoonlijk</span> moment.
-        </h1>
-        <div className="flex justify-center">
-          <a
+        {/* Mobiel: tekst boven de foto zodat alles leesbaar blijft */}
+        <div className="md:hidden text-center mb-8">
+          <h1 className="text-4xl font-light serif-font leading-tight text-[#5E503F] mb-8">
+            Zorg voor elk bijzonder & <span className="italic">persoonlijk</span> moment.
+          </h1>
+          
             href={BOOKING_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="w-full md:w-auto px-12 py-5 bg-[#C98B73] text-white text-xs font-extrabold rounded-full tracking-[0.2em] uppercase transition-all duration-300 transform hover:scale-105 hover:bg-[#B0765F] shadow-xl shadow-[#C98B73]/30"
+            className="inline-block w-full px-12 py-5 bg-[#C98B73] text-white text-xs font-extrabold rounded-full tracking-[0.2em] uppercase transition-all duration-300 hover:bg-[#B0765F] shadow-xl shadow-[#C98B73]/30"
           >
             Maak een afspraak
           </a>
         </div>
+
+        {/* Bannerfoto: altijd volledig zichtbaar */}
+        <div className="relative">
+          <img
+            src={heroCollage}
+            alt="Sfeerbeelden van behandelingen bij Glow Studio"
+            className="w-full h-auto rounded-3xl shadow-2xl shadow-[#C98B73]/20"
+          />
+
+          {/* Desktop: tekst gecentreerd op de foto, op een zacht crème paneel voor leesbaarheid */}
+          <div className="hidden md:flex absolute inset-0 items-center justify-center">
+            <div className="bg-[#FDF7F5]/90 backdrop-blur-sm rounded-3xl px-12 py-10 text-center max-w-2xl mx-8 shadow-2xl shadow-[#5E503F]/10">
+              <h1 className="text-4xl lg:text-5xl font-light serif-font leading-tight text-[#5E503F] mb-8">
+                Zorg voor elk bijzonder & <span className="italic">persoonlijk</span> moment.
+              </h1>
+              
+                href={BOOKING_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block px-12 py-5 bg-[#C98B73] text-white text-xs font-extrabold rounded-full tracking-[0.2em] uppercase transition-all duration-300 transform hover:scale-105 hover:bg-[#B0765F] shadow-xl shadow-[#C98B73]/30"
+              >
+                Maak een afspraak
+              </a>
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
   );
