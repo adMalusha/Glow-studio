@@ -16,7 +16,7 @@ const Hero: React.FC = () => {
       </div>
 
       <div className="relative animate-fade-in-up">
-        <img src={heroCollage} alt="Sfeerbeelden van behandelingen bij Glow Studio" className="w-full h-auto" />
+        <img src={heroCollage} alt="Sfeerbeelden van behandelingen bij Glow Studio" className="w-full h-auto md:h-[calc(100vh-5rem)] md:object-cover md:object-center" />
 
         <div className="hidden md:flex absolute inset-0 items-center justify-center">
           <div className="bg-[#FDF7F5]/90 backdrop-blur-sm rounded-3xl px-12 py-10 text-center max-w-2xl mx-8 shadow-2xl shadow-[#5E503F]/10">
