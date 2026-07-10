@@ -4,11 +4,11 @@ import heroCollage from '../images/hero-collage.jpg';
 
 const Hero: React.FC = () => {
   return (
-  <section className="relative overflow-hidden bg-[#FDF7F5] pt-20 md:pt-0">
+  <section className="relative overflow-hidden bg-[#FDF7F5] pt-20">
     
       <div className="relative animate-fade-in-up">
-        <img src={heroCollage} alt="Sfeerbeelden van behandelingen bij Glow Studio" className="w-full h-auto md:h-[calc(100vh-5rem)] md:object-cover md:object-center" />
-
+       <img src={heroCollage} alt="Sfeerbeelden van behandelingen bij Glow Studio" className="w-full h-auto md:w-auto md:h-[calc(100vh-5rem)] md:mx-auto" />
+        
         <div className="hidden md:flex absolute inset-0 items-center justify-center">
           <div className="bg-[#FDF7F5]/90 backdrop-blur-sm rounded-3xl px-12 py-10 text-center max-w-2xl mx-8 shadow-2xl shadow-[#5E503F]/10">
             <h1 className="text-4xl lg:text-5xl font-light serif-font leading-tight text-[#5E503F] mb-8">
