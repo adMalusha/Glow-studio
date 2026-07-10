@@ -3,6 +3,9 @@ import { Link } from 'react-router-dom';
 import { CheckCircle2, FileText, Sparkles, Baby } from 'lucide-react';
 import { TREATMENTS_INFO, BOOKING_URL } from '../constants';
 import PriceListModal from './PriceListModal';
+import beeldjesImg from '../images/beeldjes-nieuw.png';
+import laserImg from '../images/laser-nieuw.jpg';
+import tandenImg from '../images/tanden-nieuw.jpg';
 
 const Treatments: React.FC = () => {
   const [modalType, setModalType] = useState<'mannen' | 'vrouwen' | 'tanden' | 'pregnancy' | null>(null);
@@ -144,6 +147,21 @@ const Treatments: React.FC = () => {
             </div>
           </div>
 
+        </div>
+        {/* Fotorij onder de behandelingen */}
+        <div className="mt-8 lg:mt-10 grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 animate-fade-in">
+          <div className="aspect-[4/3] md:aspect-[3/4] lg:aspect-square rounded-[2.5rem] overflow-hidden relative group shadow-lg shadow-[#C98B73]/10">
+            <img src={beeldjesImg} alt="3D zwangerschapsbeeldje van MOMory" className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#5E503F]/50 to-transparent opacity-60 group-hover:opacity-40 transition-opacity"></div>
+          </div>
+          <div className="aspect-[4/3] md:aspect-[3/4] lg:aspect-square rounded-[2.5rem] overflow-hidden relative group shadow-lg shadow-[#C98B73]/10">
+            <img src={laserImg} alt="Laserontharing bij Glow Studio" className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#5E503F]/50 to-transparent opacity-60 group-hover:opacity-40 transition-opacity"></div>
+          </div>
+          <div className="aspect-[4/3] md:aspect-[3/4] lg:aspect-square rounded-[2.5rem] overflow-hidden relative group shadow-lg shadow-[#C98B73]/10">
+            <img src={tandenImg} alt="Tanden witten bij Glow Studio" className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#5E503F]/50 to-transparent opacity-60 group-hover:opacity-40 transition-opacity"></div>
+          </div>
         </div>
       </div>
 
