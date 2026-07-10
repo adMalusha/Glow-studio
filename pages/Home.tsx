@@ -11,7 +11,7 @@ const Home: React.FC = () => {
     <div className="animate-fade-in">
       <Hero />
       <Intro />
-      <Treatments />
+      <Treatments showPhotos />
       <EljolieLabel />
       <ReviewCarousel />
       
