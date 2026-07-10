@@ -7,7 +7,6 @@ const Hero: React.FC = () => {
     <section className="relative overflow-hidden bg-[#FDF7F5] pt-10 md:pt-16 pb-16 md:pb-24">
       <div className="container relative z-10 mx-auto px-6 max-w-6xl animate-fade-in-up">
 
-        {/* Mobiel: tekst boven de foto zodat alles leesbaar blijft */}
         <div className="md:hidden text-center mb-8">
           <h1 className="text-4xl font-light serif-font leading-tight text-[#5E503F] mb-8">
             Zorg voor elk bijzonder & <span className="italic">persoonlijk</span> moment.
@@ -22,7 +21,6 @@ const Hero: React.FC = () => {
           </a>
         </div>
 
-        {/* Bannerfoto: altijd volledig zichtbaar */}
         <div className="relative">
           <img
             src={heroCollage}
@@ -30,7 +28,6 @@ const Hero: React.FC = () => {
             className="w-full h-auto rounded-3xl shadow-2xl shadow-[#C98B73]/20"
           />
 
-          {/* Desktop: tekst gecentreerd op de foto, op een zacht crème paneel voor leesbaarheid */}
           <div className="hidden md:flex absolute inset-0 items-center justify-center">
             <div className="bg-[#FDF7F5]/90 backdrop-blur-sm rounded-3xl px-12 py-10 text-center max-w-2xl mx-8 shadow-2xl shadow-[#5E503F]/10">
               <h1 className="text-4xl lg:text-5xl font-light serif-font leading-tight text-[#5E503F] mb-8">
