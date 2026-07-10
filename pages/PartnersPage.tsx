@@ -3,31 +3,6 @@ import { ExternalLink, Heart } from 'lucide-react';
 
 const partners = [
   {
-    name: 'Before Birth',
-    description: '3D echografie',
-    url: 'https://www.beforebirth.be/',
-  },
-  {
-    name: "L'amour des jumelles",
-    description: 'Winkel voor baby & kids',
-    url: 'https://www.lamour-des-jumelles.be/',
-  },
-  {
-    name: 'Atelier Steso',
-    description: 'Gepersonaliseerde spullen',
-    url: 'https://www.instagram.com/atelier.steso/',
-  },
-  {
-    name: 'Hanne Detail',
-    description: 'Juweeltjes – aandenkingsjuwelen',
-    url: 'https://hannedetail.be/',
-  },
-  {
-    name: 'Atelier Mendez',
-    description: 'Bodycasting',
-    url: 'https://www.ateliermendezbodycasting.be/',
-  },
-  {
     name: 'Mamzelle Axelle',
     description: 'Aandenkingsjuwelen (moedermelk, navelstreng, ...)',
     url: 'https://mamzelleaxelle.be/',
