@@ -4,8 +4,8 @@ import heroCollage from '../images/hero-collage.jpg';
 
 const Hero: React.FC = () => {
   return (
-    <section className="relative overflow-hidden bg-[#FDF7F5] pt-20">
-
+  <section className="relative overflow-hidden bg-[#FDF7F5] pt-20 md:pt-0">
+    
       <div className="relative animate-fade-in-up">
         <img src={heroCollage} alt="Sfeerbeelden van behandelingen bij Glow Studio" className="w-full h-auto md:h-[calc(100vh-5rem)] md:object-cover md:object-center" />
 
