@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Sparkles } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
+import transparentLogo from '../images/TransparentLogo.png';
 import { BOOKING_URL } from '../constants';
 
 const Navbar: React.FC = () => {
@@ -23,7 +24,7 @@ const Navbar: React.FC = () => {
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         <div className="flex justify-between items-center h-20">
           <Link to="/" className="flex items-center space-x-2 group">
-            <Sparkles className="w-6 h-6 text-[#C98B73] transition-transform group-hover:scale-110" />
+           <img src={transparentLogo} alt="Glow Studio logo" className="w-12 h-12 object-contain transition-transform group-hover:scale-110" />
             <span className="text-xl font-bold tracking-widest text-[#5E503F] uppercase">Glow Studio</span>
           </Link>
 
