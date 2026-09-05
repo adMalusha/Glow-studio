@@ -3,7 +3,6 @@ import Hero from '../components/Hero';
 import Intro from '../components/Intro';
 import ReviewCarousel from '../components/ReviewCarousel';
 import Treatments from '../components/Treatments';
-import EljolieLabel from '../components/EljolieLabel';
 import { BOOKING_URL } from '../constants';
 
 const Home: React.FC = () => {
@@ -12,7 +11,7 @@ const Home: React.FC = () => {
       <Hero />
       <Intro />
       <Treatments showPhotos />
-      <EljolieLabel />
+     
       <ReviewCarousel />
       
       {/* Final Call to Action */}
