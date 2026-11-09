@@ -10,7 +10,7 @@ const Home: React.FC = () => {
     <div className="animate-fade-in">
       <Hero />
       <Intro />
-      <Treatments showPhotos />
+      <Treatments showPhotos hideMomory/>
      
       <ReviewCarousel />
       
