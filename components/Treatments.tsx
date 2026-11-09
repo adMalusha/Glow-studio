@@ -7,15 +7,16 @@ import beeldjesImg from '../images/beeldjes-nieuw.png';
 import laserImg from '../images/laser-nieuw.jpg';
 import tandenImg from '../images/tanden-nieuw.jpg';
 
-const Treatments: React.FC<{ showPhotos?: boolean }> = ({ showPhotos }) => {
+const Treatments: React.FC<{ showPhotos?: boolean; hideMomory?: boolean }> = ({ showPhotos, hideMomory }) => {
   const [modalType, setModalType] = useState<'mannen' | 'vrouwen' | 'tanden' | 'pregnancy' | null>(null);
 
   return (
     <section className="py-24 bg-[#FDF7F5]">
       <div className="container mx-auto px-4 max-w-full lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+        <div className={`grid grid-cols-1 gap-6 lg:gap-8 ${hideMomory ? 'md:grid-cols-2 max-w-5xl mx-auto' : 'md:grid-cols-2 lg:grid-cols-3'}`}>
           
           {/* Pregnancy Statue Card */}
+          {!hideMomory && (
           <div className="group relative overflow-hidden bg-white rounded-[2.5rem] p-8 lg:px-8 xl:p-10 border border-[#F4D3D3]/30 transition-all duration-500 hover:shadow-2xl hover:shadow-[#C98B73]/10 flex flex-col h-full animate-fade-in-up">
             <div className="mb-8">
               <span className="text-xs uppercase tracking-widest text-[#C98B73] font-bold mb-4 block">Uniek Aandenken</span>
@@ -45,16 +46,12 @@ const Treatments: React.FC<{ showPhotos?: boolean }> = ({ showPhotos }) => {
                     <span>Onze Beeldjes</span>
                   </button>
                </div>
-              <a
-                href={BOOKING_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-full inline-block text-center py-4 bg-[#C98B73] text-white text-sm font-extrabold rounded-full tracking-widest uppercase transition-all hover:bg-[#B0765F]"
-              >
+              <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer" className="w-full inline-block text-center py-4 bg-[#C98B73] text-white text-sm font-extrabold rounded-full tracking-widest uppercase transition-all hover:bg-[#B0765F]">
                 Creëer je herinnering
               </a>
             </div>
           </div>
+          )}
 
           {/* Laser Treatment Card */}
           <div className="group relative overflow-hidden bg-[#F9E5E5]/40 rounded-[2.5rem] p-8 lg:px-8 xl:p-10 border border-[#F4D3D3]/30 transition-all duration-500 hover:shadow-2xl hover:shadow-[#C98B73]/10 flex flex-col h-full animate-fade-in-up" style={{animationDelay: '100ms'}}>
@@ -95,12 +92,7 @@ const Treatments: React.FC<{ showPhotos?: boolean }> = ({ showPhotos }) => {
                     </button>
                   </div>
                </div>
-               <a
-                href={BOOKING_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-full inline-block text-center py-4 bg-[#C98B73] text-white text-sm font-extrabold rounded-full tracking-widest uppercase transition-all hover:bg-[#B0765F]"
-              >
+               <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer" className="w-full inline-block text-center py-4 bg-[#C98B73] text-white text-sm font-extrabold rounded-full tracking-widest uppercase transition-all hover:bg-[#B0765F]">
                 Boek een sessie
               </a>
             </div>
@@ -136,12 +128,7 @@ const Treatments: React.FC<{ showPhotos?: boolean }> = ({ showPhotos }) => {
                     <span>Onze Sparkle Pakketten</span>
                   </button>
                </div>
-              <a
-                href={BOOKING_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-full inline-block text-center py-4 bg-[#C98B73] text-white text-sm font-extrabold rounded-full tracking-widest uppercase transition-all hover:bg-[#B0765F]"
-              >
+              <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer" className="w-full inline-block text-center py-4 bg-[#C98B73] text-white text-sm font-extrabold rounded-full tracking-widest uppercase transition-all hover:bg-[#B0765F]">
                 Boek een sessie
               </a>
             </div>
@@ -150,11 +137,13 @@ const Treatments: React.FC<{ showPhotos?: boolean }> = ({ showPhotos }) => {
         </div>
         {/* Fotorij onder de behandelingen */}
         {showPhotos && (
-        <div className="mt-8 lg:mt-10 grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 animate-fade-in">
+        <div className={`mt-8 lg:mt-10 grid grid-cols-1 gap-6 lg:gap-8 animate-fade-in ${hideMomory ? 'md:grid-cols-2 max-w-5xl mx-auto' : 'md:grid-cols-3'}`}>
+          {!hideMomory && (
           <div className="aspect-[4/3] md:aspect-[3/4] lg:aspect-square rounded-[2.5rem] overflow-hidden relative group shadow-lg shadow-[#C98B73]/10">
             <img src={beeldjesImg} alt="3D zwangerschapsbeeldje van MOMory" className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" />
             <div className="absolute inset-0 bg-gradient-to-t from-[#5E503F]/50 to-transparent opacity-60 group-hover:opacity-40 transition-opacity"></div>
           </div>
+          )}
           <div className="aspect-[4/3] md:aspect-[3/4] lg:aspect-square rounded-[2.5rem] overflow-hidden relative group shadow-lg shadow-[#C98B73]/10">
             <img src={laserImg} alt="Laserontharing bij Glow Studio" className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" />
             <div className="absolute inset-0 bg-gradient-to-t from-[#5E503F]/50 to-transparent opacity-60 group-hover:opacity-40 transition-opacity"></div>
