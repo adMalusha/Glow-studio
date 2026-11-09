@@ -75,9 +75,9 @@ const ProcessPage: React.FC = () => {
               <div className="space-y-12">
                 {[
                   { title: 'Adviesgesprek', text: 'Een vrijblijvend gesprek over huidtype, haardichtheid en medische zaken voor een optimaal plan.' },
-                  { title: 'Voorbereiding', text: 'Zorg dat de zone gladgeschoren is. Neem een foto van het ongeschoren gebied mee naar de eerste afspraak.' },
+                  { title: 'Voorbereiding', text: 'Zorg dat de zone geschoren is, 72u voor de behandeling. Niet minder dan 72u scheren! Neem een foto van het ongeschoren gebied mee naar de eerste afspraak.' },
                   { title: 'De behandeling', text: 'We gebruiken een beschermende bril en koelende gel. De duur hangt af van de gekozen zone.' },
-                  { title: 'Nazorg & Opvolging', text: 'Nazorg met crème en persoonlijke tips. Vervolgsessies worden om de 6-8 weken gepland.' }
+                  { title: 'Nazorg & Opvolging', text: 'Nazorg met crème en persoonlijke tips. Vervolgsessies worden om de 4-6 weken gepland.' }
                 ].map((step, idx) => (
                   <div key={idx} className="flex space-x-6">
                     <div className="flex-shrink-0 w-8 h-8 rounded-full border border-[#C98B73] flex items-center justify-center text-[#C98B73] text-xs font-bold">
