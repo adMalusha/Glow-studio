@@ -73,7 +73,7 @@ const TreatmentsPage: React.FC = () => {
             },
             { 
               title: 'Uniek', 
-              text: 'Elke behandeling is op maat van jou. Zowel bij het maken van een 3D zwangerschapsbeeldje of laserontharing.',
+              text: 'Elke behandeling is op maat van jou. Zowel bij tanden witten als laserontharing.',
               icon: Fingerprint
             },
             { 
