@@ -1,5 +1,5 @@
 import React from 'react';
-import { Calendar, ClipboardList, Camera, Sparkles, ShieldCheck, Zap, Heart, Info, Clock, Thermometer } from 'lucide-react';
+import { ClipboardList, Sparkles, ShieldCheck, Zap, Info, Clock, Thermometer } from 'lucide-react';
 import { BOOKING_URL } from '../constants';
 
 const ProcessPage: React.FC = () => {
@@ -14,52 +14,6 @@ const ProcessPage: React.FC = () => {
             Bij Glow Studio geloven we in een persoonlijke aanpak. Ontdek hier stap voor stap hoe we te werk gaan bij elke behandeling, zodat je precies weet wat je kunt verwachten.
           </p>
         </div>
-
-        {/* 3D Zwangerschapsbeeldje Section */}
-        <section className="mb-32">
-          <div className="flex items-center space-x-4 mb-12">
-            <div className="w-12 h-12 bg-[#F9E5E5] rounded-full flex items-center justify-center">
-              <Heart className="w-6 h-6 text-[#C98B73]" />
-            </div>
-            <h2 className="text-3xl md:text-4xl serif-font text-[#5E503F]">3D Zwangerschapsbeeldje</h2>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {[
-              {
-                step: '01',
-                title: 'Boek jouw afspraak',
-                text: 'Kies een moment dat voor jou het beste uitkomt. Ideaal tussen week 32–36, maar we stemmen volledig af op jouw gevoel.',
-                icon: Calendar
-              },
-              {
-                step: '02',
-                title: 'Keuze maken',
-                text: 'We bespreken houding, kleur en formaat. We nemen een uur de tijd zodat alles rustig en op jouw tempo verloopt.',
-                icon: ClipboardList
-              },
-              {
-                step: '03',
-                title: 'De 3D-scan',
-                text: 'Een veilige scan van 5 minuten. Voorzie een badjas. Je kiest zelf of je naakt of bedekt poseert.',
-                icon: Camera
-              },
-              {
-                step: '04',
-                title: 'Afwerking',
-                text: 'We bewerken het model tot in detail en zetten het om in een uniek beeldje. Een tastbare herinnering voor altijd.',
-                icon: Sparkles
-              }
-            ].map((item, idx) => (
-              <div key={idx} className="bg-white p-8 rounded-[2rem] border border-[#F4D3D3]/20 shadow-sm hover:shadow-md transition-all group">
-                <div className="text-[#C98B73]/20 text-5xl font-bold serif-font mb-4 group-hover:text-[#C98B73]/40 transition-colors">{item.step}</div>
-                <item.icon className="w-8 h-8 text-[#C98B73] mb-6" />
-                <h4 className="text-lg font-bold text-[#5E503F] mb-4 uppercase tracking-wider">{item.title}</h4>
-                <p className="text-sm text-[#5E503F]/70 leading-relaxed font-light">{item.text}</p>
-              </div>
-            ))}
-          </div>
-        </section>
 
         {/* Laserontharing Section */}
         <section className="mb-32 bg-white rounded-[3rem] p-10 md:p-16 border border-[#F4D3D3]/30">
