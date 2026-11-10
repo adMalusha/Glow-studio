@@ -58,7 +58,7 @@ const ProcessPage: React.FC = () => {
                     { icon: Zap, title: 'Snel', desc: 'Kortere behandeltijden, ook voor grote zones.' },
                     { icon: Thermometer, title: 'Pijnloos', desc: 'Comfortabel door geavanceerde koeling.' },
                     { icon: ShieldCheck, title: 'Effectief', desc: 'Zichtbaar resultaat in minder sessies.' },
-                    { icon: Info, title: 'Veilig', desc: 'Geschikt voor alle huid- en haartypes.' }
+                    { icon: Info, title: 'Veilig', desc: 'Geschikt voor alle huid- en haartypes.' },
                     { icon: Snowflake, title: 'Koelend effect', desc: 'Het voelt koud aan, alsof je ijs op je huid legt.' }
                   ].map((benefit, i) => (
                     <div key={i} className="bg-white p-6 rounded-2xl shadow-sm border border-[#F4D3D3]/20">
