@@ -87,7 +87,7 @@ const ProcessPage: React.FC = () => {
               { title: 'Advies', icon: ClipboardList, text: 'We bepalen samen de duur en bespreken wat realistisch is.' },
               { title: 'Voorbereiding', icon: ShieldCheck, text: 'Reinigen van tanden en lippen. Het mondstuk breng je zelf in.' },
               { title: 'Behandeling', icon: Zap, text: 'LED-licht activeert het product terwijl jij ontspant met een bril.' },
-              { title: 'Wachttijd', icon: Clock, text: '20-80 minuten. Nieuwe klanten starten vaak met 20 of 40 min.' },
+              { title: 'Wachttijd', icon: Clock, text: '20-80 minuten. Nieuwe klanten starten altijd met 60 minuten.' },
               { title: 'Resultaat', icon: Sparkles, text: 'Nazorg tips voor een blijvende lach. Meerdere sessies zijn mogelijk.' }
             ].map((step, idx) => (
               <div key={idx} className="bg-white p-8 rounded-[2rem] border border-[#F4D3D3]/20 flex flex-col items-center text-center">
