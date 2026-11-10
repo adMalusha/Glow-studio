@@ -1,5 +1,5 @@
 import React from 'react';
-import { ClipboardList, Sparkles, ShieldCheck, Zap, Info, Clock, Thermometer } from 'lucide-react';
+import { ClipboardList, Sparkles, ShieldCheck, Zap, Info, Clock, Thermometer, Snowflake } from 'lucide-react';
 import { BOOKING_URL } from '../constants';
 
 const ProcessPage: React.FC = () => {
@@ -50,7 +50,7 @@ const ProcessPage: React.FC = () => {
               <div className="bg-[#FDF7F5] rounded-[2.5rem] p-8 md:p-10 border border-[#F4D3D3]/50 h-full">
                 <h3 className="text-2xl serif-font text-[#5E503F] mb-6">Onze technologie</h3>
                 <p className="text-[#5E503F]/70 mb-8 text-sm leading-relaxed">
-                  Wij werken met de <strong>Diode laser 4 Wave Master</strong>. Dit toestel combineert vier golflengtes (755nm, 808nm, 1064nm & 940nm) voor maximaal resultaat op elk huidtype.
+                  Wij werken met de <strong>Diode ICE laser</strong>. Dit toestel geeft optimale resultaten bij elk huidtype.
                 </p>
                 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
@@ -59,6 +59,7 @@ const ProcessPage: React.FC = () => {
                     { icon: Thermometer, title: 'Pijnloos', desc: 'Comfortabel door geavanceerde koeling.' },
                     { icon: ShieldCheck, title: 'Effectief', desc: 'Zichtbaar resultaat in minder sessies.' },
                     { icon: Info, title: 'Veilig', desc: 'Geschikt voor alle huid- en haartypes.' }
+                    { icon: Snowflake, title: 'Koelend effect', desc: 'Het voelt koud aan, alsof je ijs op je huid legt.' }
                   ].map((benefit, i) => (
                     <div key={i} className="bg-white p-6 rounded-2xl shadow-sm border border-[#F4D3D3]/20">
                       <benefit.icon className="w-5 h-5 text-[#C98B73] mb-3" />
