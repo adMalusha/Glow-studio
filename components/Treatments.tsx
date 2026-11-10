@@ -63,6 +63,9 @@ const Treatments: React.FC<{ showPhotos?: boolean; hideMomory?: boolean }> = ({ 
               <p className="text-[#5E503F]/70 mb-8 leading-relaxed">
                 {TREATMENTS_INFO.laser.description}
               </p>
+              <p className="text-sm text-[#C98B73] font-medium mb-8 leading-relaxed">
+                Wil je laserontharing eerst uitproberen? Boek een testsessie. Deze testsessie is uitsluitend mogelijk voor de oksels.
+              </p>
               <ul className="space-y-4 mb-10">
                 {TREATMENTS_INFO.laser.benefits.map((benefit, i) => (
                   <li key={i} className="flex items-center space-x-3 text-[#5E503F]">
