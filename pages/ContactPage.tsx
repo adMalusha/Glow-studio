@@ -69,11 +69,6 @@ const ContactPage: React.FC = () => {
                        <span className={item.hours === 'Gesloten' ? 'text-red-300' : 'text-[#5E503F]/60'}>{item.hours}</span>
                     </div>
                   ))}
-                  <div className="pt-4 text-center">
-                    <p className="text-sm italic text-[#5E503F]/80 font-medium">
-                      (op zaterdag enkel 3D zwangerschapsbeeldjes)
-                    </p>
-                  </div>
                </div>
             </div>
 
