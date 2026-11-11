@@ -14,12 +14,12 @@ const TreatmentsPage: React.FC = () => {
         <div className="text-center mb-20 animate-fade-in">
           <h1 className="text-4xl md:text-6xl serif-font text-[#4A443E] mb-6">Onze behandelingen</h1>
           <p className="text-lg text-[#4A443E]/60 max-w-2xl mx-auto font-light leading-relaxed">
-            In ons salon kan je terecht voor drie behandelingen waar kwaliteit en persoonlijke zorg prioriteit heeft.
+            In ons salon kan je terecht voor laserontharing en tanden witten, met kwaliteit en persoonlijke zorg als prioriteit.
           </p>
         </div>
 
         {/* Prijzen en info sectie */}
-        <Treatments />
+        <Treatments hideMomory />
 
         {/* Visual Gallery Section - Jouw 3 foto's in de nieuwe volgorde */}
         <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 animate-fade-in">
